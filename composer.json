@@ -3,10 +3,24 @@
     "description": "A PHP library to parse .properties configuration files, often used for Minecraft servers.",
     "minimum-stability": "stable",
     "license": "MIT",
+    "keywords": ["properties", "parser"],
+    "homepage": "https://github.com/sekjun9878/properties",
+    "type": "library",
     "authors": [
         {
             "name": "Michael Yoo",
-            "email": "michael@yoo.id.au"
+            "email": "michael@yoo.id.au",
+            "homepage": "https://www.michael.yoo.id.au/",
+            "role": "Developer"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.6"
+    },
+    "autoload": {
+        "psr-4": { "sekjun9878\\Properties\\": "src/" }
+    }
 }
