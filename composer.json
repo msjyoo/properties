@@ -1,0 +1,12 @@
+{
+    "name": "sekjun9878/properties",
+    "description": "A PHP library to parse .properties configuration files, often used for Minecraft servers.",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Yoo",
+            "email": "michael@yoo.id.au"
+        }
+    ]
+}
