@@ -19,7 +19,7 @@ class Properties
 		$matches = [];
 		$output = [];
 
-		if(!preg_match('/([a-zA-Z0-9\-_\.]*)=([^\r\n]*)/u', $input, $matches, PREG_SET_ORDER))
+		if(!preg_match_all('/([a-zA-Z0-9\-_\.]*)=([^\r\n]*)/u', $input, $matches, PREG_SET_ORDER))
 		{
 			return false;
 		}
@@ -61,7 +61,7 @@ class Properties
 		// This is set for the date() function below.
 		date_default_timezone_set(date_default_timezone_get());
 
-		$output = "#Properties Config file\r\n#" . date("D M j H:i:s T Y") . "\r\n";
+		$output = "#Properties Config file\r\n#".date("D M j H:i:s T Y")."\r\n";
 
 		foreach($input as $key => $value)
 		{
@@ -74,7 +74,7 @@ class Properties
 				$value = implode(",", $value);
 			}
 
-			$output .= $key . "=" . $value . "\r\n";
+			$output .= $key."=".$value."\r\n";
 		}
 
 		return $output;
